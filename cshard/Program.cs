@@ -18,7 +18,7 @@ namespace Csharp
             Console.WriteLine("Temp?");
             double temp;
             temp = Convert.ToDouble(Console.ReadLine());
-            if (temp < 18)
+            if (temp < 20)
             {
                 Console.WriteLine("It is really cold here.");
             }
