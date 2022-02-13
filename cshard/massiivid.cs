@@ -71,7 +71,7 @@ namespace cshard
                 Console.WriteLine(j*j);
             }
             */
-
+            /*
             //task 2
             double[] numbers = new double[5];
             do
@@ -97,11 +97,76 @@ namespace cshard
             } while (numbers.Length==5);
 
 
+            */
+            /*
+            int tryes,otvet;
+            tryes = 0;
+            Random rnd = new Random();
+            int number = rnd.Next(1,10);
+            //Console.WriteLine(number);
+            Console.WriteLine("ugadai 4islo ot 1 do 10");
+            Console.WriteLine("u tebja 5 popitok");
+            do
+            {
 
+                otvet = int.Parse(Console.ReadLine());
+                if (otvet == number)
+                {
+                    Console.WriteLine("pravilno, ti molodec");
+                    break;
+                }
+                else if (otvet<number)
+                {
+                    tryes++;
+                    Console.WriteLine("zagadanoe 4islo bolshe {0} , ostalos "+(5-tryes)+" popitok", otvet);
+                   
+                }
+                else if (otvet > number)
+                {
+                    tryes++;
+                    Console.WriteLine("zagadanoe 4islo menshe {0} , ostalos " + (5 - tryes) + "  popitok", otvet);
+                    
+                }
+            } while (tryes < 5);
+            if (tryes==5)
+            {
+                Console.WriteLine("U vas kon4ilis popitki");
+            }
+            
+            */
 
+            /*
+            Console.WriteLine("Введите 4 числа");
+            int a, b, c, d, max;
+            max = 0;
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            d = int.Parse(Console.ReadLine());
+            if ((a > b) && (a > c) && (a > d)) max = a;
+            if ((b > a) && (b > c) && (b > d)) max = b;
+            if ((c > a) && (c > b) && (c > d)) max = c;
+            if ((d > a) && (d > b) && (d > c)) max = d;
+            Console.WriteLine("Наибольшее число >>> {0}", max);
+            */
 
+            /*
 
-
+            for (int i = 1; i < 11; i++)
+            {
+                for (int i2 = 1; i2 < 11; i2++)
+                {
+                    Console.Write("\t" + i * i2);
+                }
+                Console.WriteLine("");
+                Console.WriteLine("");
+            }
+            */
+            /*
+            Console.WriteLine("1230");
+            Console.WriteLine("\n"+"1230");
+            Console.WriteLine("\t" + "1230");
+            */
 
             ConsoleKeyInfo click;
             do
