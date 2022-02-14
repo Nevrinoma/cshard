@@ -10,7 +10,44 @@ namespace cshard
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.UTF8;
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
             /*
+            int q = 10;
+            int Korrutis = alam_prog.Korrutamine(q, 5);
+            Console.WriteLine(Korrutis);
+            */
+            
+
+
+
+
+
+
+            /*
+            Array massiv;
+
+
+
             Random rnd = new Random();
             int[] numbers = new int[10];
             for (int i = 0; i < numbers.Length; i++)
@@ -137,18 +174,24 @@ namespace cshard
 
             /*
             Console.WriteLine("Введите 4 числа");
-            int a, b, c, d, max;
-            max = 0;
-            a = int.Parse(Console.ReadLine());
-            b = int.Parse(Console.ReadLine());
-            c = int.Parse(Console.ReadLine());
-            d = int.Parse(Console.ReadLine());
-            if ((a > b) && (a > c) && (a > d)) max = a;
-            if ((b > a) && (b > c) && (b > d)) max = b;
-            if ((c > a) && (c > b) && (c > d)) max = c;
-            if ((d > a) && (d > b) && (d > c)) max = d;
-            Console.WriteLine("Наибольшее число >>> {0}", max);
+            int[] numbers4 = new int[4];
+            for (int i = 0; i < numbers4.Length; i++)
+            {
+                numbers4[i] = int.Parse(Console.ReadLine());
+
+            }
+            Array.Sort(numbers4);
+            int d = 0;
+            for (int t = 0; t < numbers4.Length; t++)
+            {
+                d = (int)(d + numbers4[t] * Math.Pow(10, t));
+            }
+            Console.WriteLine(d);
             */
+
+
+
+
 
             /*
 
@@ -158,15 +201,24 @@ namespace cshard
                 {
                     Console.Write("\t" + i * i2);
                 }
-                Console.WriteLine("");
-                Console.WriteLine("");
+                Console.WriteLine();
+                Console.WriteLine();
             }
+
             */
             /*
             Console.WriteLine("1230");
             Console.WriteLine("\n"+"1230");
             Console.WriteLine("\t" + "1230");
             */
+
+
+
+
+
+
+
+
 
             ConsoleKeyInfo click;
             do
