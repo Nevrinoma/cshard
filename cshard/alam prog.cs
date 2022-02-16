@@ -81,5 +81,77 @@ namespace cshard
         }
 
 
+        public static string cat(int t1,int t2,string tehe)
+        { 
+            double da;
+            Console.WriteLine("Napishite pervoe celoe 4islo");
+            t1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Napishite vtoroe celoe 4islo");
+            t2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Napishite deistvie (+ - * /");
+            tehe = Console.ReadLine();  
+            Console.WriteLine(tehe);
+            if (tehe=="+")
+	        {
+                da=(t1+t2);
+                /*
+                for (int i = 0; i < da; i++)
+			    {
+                    Console.WriteLine("nurr ");
+			    }
+                */
+	        }
+            else if (tehe=="-")
+	        {
+                if (t1<t2)
+	            {
+                    da=(t2-t1);
+                    /*
+                    for (int i = 0; i < da; i++)
+			        {
+                        Console.WriteLine("nurr ");
+			        }
+                    */
+	            }
+                else
+	            {
+                    da=(t1-t2);
+                    /*
+                    for (int i = 0; i < da; i++)
+			        {
+                        Console.WriteLine("nurr ");
+			        }
+                    */
+	            }
+	        }
+            else if (tehe=="*")
+	        {
+                da=(t1*t2);
+                /*
+                for (int i = 0; i < da; i++)
+			    {
+                    Console.WriteLine("nurr ");
+			    }
+                */
+	        }
+            else if (tehe=="/")
+	        {
+                da=(t1/t2);
+                Math.Round(da);
+                /*
+                for (int i = 0; i < da; i++)
+			    {
+                    Console.WriteLine("nurr ");
+			    }
+                */
+	        }
+            return da;
+        }
+
+
+
+
+
+
     }
 }

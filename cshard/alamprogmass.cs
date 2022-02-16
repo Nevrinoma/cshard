@@ -10,7 +10,14 @@ namespace cshard
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(alam_prog.keskN(5));
+            Console.OutputEncoding = Encoding.UTF8;
+            //Console.WriteLine(alam_prog.keskN(5));
+            Console.WriteLine(alam_prog.cat(da));
+            for (int i = 0; i < da; i++)
+			{
+                    Console.WriteLine("nurr ");
+			}
+            
 
 
 
@@ -21,9 +28,13 @@ namespace cshard
 
 
 
-
-
-            Console.ReadLine();
+            ConsoleKeyInfo click;
+            do
+            {
+                click = Console.ReadKey(true);
+                Console.Beep();
+            } while (click.Key != ConsoleKey.Escape);
+            Environment.Exit(0);
         }
 
     }
